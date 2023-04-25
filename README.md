@@ -20,6 +20,25 @@ Conclusions
 * We can also conclude that people use Uber for regular office commutes. The demand steadily increases from 6 AM to 10 AM, then declines a little and starts picking up     till midnight. The demand peaks at 7-8 PM.
 * We need to further investigate the low demand for Uber on Mondays.
 
+### House Price Prediction
+
+Objective: Predict the final sales price of each house.
+
+* Implemented the following models - 
+Full Regression Model (takes into account all predictor variables) , Best Subset Linear Regression (fits all possible models based on the independent variables that you specify) , Stepwise Regression (successively add or drop variables) and Forward Selection (Start with the constant model and successively add statistically significant variables)
+
+* Performance measure used - Root Mean Squared Error (RMSE)
+
+* Used AIC score to quantify the best model.The AIC is designed to find the model that explains the most variation in the data, while penalizing for models that use an excessive number of parameters 
+
+* In Best Subset Linear Regression  took all possible combinations of 2 predictor variables to save time and chose model which has the least AIC score. The two most important variables for predicting house price is 'GrLivArea' and 'OverallQual'.
+
+* Stepwise Regression .The AIC score of the best model is 23160.908. The model selected 92 variables
+
+* Forward Selection model.  The best forward selection model has the AIC score of 23178.092 and it has 102 variables .
+
+* The stepwise model has the least RMSE of all the models.The subset model has the highest RMSE but we built the model only for 2 variables to save time. We can further explore as many variables as we wish and calculate the RMSE
+
 ### Unsupervised Learning
 
 Objective: The purpose of the case study is to classify a given silhouette as one of four different types of vehicle
