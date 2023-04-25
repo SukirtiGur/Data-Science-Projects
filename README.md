@@ -20,6 +20,18 @@ Conclusions
 * We can also conclude that people use Uber for regular office commutes. The demand steadily increases from 6 AM to 10 AM, then declines a little and starts picking up     till midnight. The demand peaks at 7-8 PM.
 * We need to further investigate the low demand for Uber on Mondays.
 
+### Unsupervised Learning
+
+Objective: The purpose of the case study is to classify a given silhouette as one of four different types of vehicle
+
+* Built correlation matrix between 'class' variable and other features to check the relationship. There were few features with strong correlation with the target variable.
+
+* Implemented PCA on our training data set to reduce the dimensionality of the data. We chose the most important principal components that explain the maximum variance in the dataset. In our case we reduced the dimension from 18 to 7 and selected those which explained 95% variance.Principal Components are linear combination of original features which makes them less interpretable. Reducing dimensionality does cause some information loss.
+
+* Applied Random Forest and Support Vector Classifier on the reduced features (dimensions) and got average precision score of 74% and 76% , recall score of 77% and 78% , accuracy score of 77% and 78% respectively. Also applied SVC on the 18 actual features (with interpretability) and saw an accuracy score of 96%, precision (macro) score of 97% and recall (macro) score of 95%, which is a way better score then SVC when applied on principal components.
+
+Based on learning curve we saw that Random Forest Classifier was overfitting the training set and not performing well on the validation set.For SVC with principal components and SVC with original features both training score and validation score increase with the increase in the size of the training data.
+
 
 
 
