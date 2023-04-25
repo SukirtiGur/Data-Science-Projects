@@ -20,7 +20,7 @@ Conclusions
 * We can also conclude that people use Uber for regular office commutes. The demand steadily increases from 6 AM to 10 AM, then declines a little and starts picking up     till midnight. The demand peaks at 7-8 PM.
 * We need to further investigate the low demand for Uber on Mondays.
 
-### House Price Prediction
+### House Price Prediction - Full Linear Regression, Best Subset , Stepwise Regression and Forward Selection
 
 Objective: Predict the final sales price of each house.
 
