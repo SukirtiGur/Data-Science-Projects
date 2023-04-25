@@ -30,7 +30,9 @@ Objective: The purpose of the case study is to classify a given silhouette as on
 
 * Applied Random Forest and Support Vector Classifier on the reduced features (dimensions) and got average precision score of 74% and 76% , recall score of 77% and 78% , accuracy score of 77% and 78% respectively. Also applied SVC on the 18 actual features (with interpretability) and saw an accuracy score of 96%, precision (macro) score of 97% and recall (macro) score of 95%, which is a way better score then SVC when applied on principal components.
 
-* Based on learning curve we saw that Random Forest Classifier was overfitting the training set and not performing well on the validation set.For SVC with principal components and SVC with original features both training score and validation score increase with the increase in the size of the training data.
+* Based on learning curve we saw that Random Forest Classifier was overfitting the training set and not performing well on the validation set.
+
+* For SVC with principal components and SVC with original features both training score and validation score increase with the increase in the size of the training data.
 
 
 
